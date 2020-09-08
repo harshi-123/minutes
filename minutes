@@ -1,0 +1,23 @@
+package harshitha;
+import java.util.Scanner;
+
+public class MyCaptain1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the minutes:");
+		double min=sc.nextDouble();
+		
+		
+		//conditions
+		long year=(long)(min/525600);//3456789/525600 is approximately 6 years
+		int day=(int)(min/60/24)%365;//3456789/60/24 is approximately 1382716 and 1382716%365 is 210 
+		
+		//output
+		System.out.println(min+" minutes is approximately "+year+" years  and "+day+" days");
+		
+				
+	}
+
+}
